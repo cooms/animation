@@ -1,0 +1,178 @@
+.canvas {
+		width: 80%;
+		height: 800px;
+
+		margin: 0px auto;
+
+		box-shadow: 0px 0px 10px black;
+
+	}
+
+	.block {
+		font-size: 2em;
+		color: white;
+		text-align: center;
+		position: relative;
+
+		width: 100px;
+		background-color: blue;
+
+	    animation-name: example;
+	    animation-duration: 4s;
+	}
+
+	.ball {
+		width: 80px;
+		height: 80px;
+
+		background-color: green;
+		border-radius: 200px;
+
+		position: relative;
+
+		text-align: center;
+		margin: 50px 500px;
+
+		animation-name: bounce;
+	    animation-duration: 1.7s;
+	}
+
+	.vinyl {
+		margin: 0px 600px;
+		width: 250px;
+		height: auto;
+
+		animation-name: rotate;
+		animation-duration: 4s;
+		animation-iteration-count: infinite;
+    	animation-timing-function: linear;
+	}
+
+	.eye {
+		margin: 0px 200px;
+
+		width: 300px;
+		height: 300px;
+
+		border: 2px solid black;
+		border-radius: 200px;
+	}
+
+	.iris {
+		position: relative;
+		margin: 80px 87px;
+
+		width: 130px;
+		height: 130px;
+
+		background-image: url("iris.png");
+		background-position: center;
+ 		background-size: cover;
+
+		border-radius: 100px;
+		animation-name: look;
+		animation-duration: 4s;
+	}
+
+	.pupil {
+		position: relative;
+		margin: 40px 40px;
+		border: 1px solid black;
+		border-radius: 50px;
+
+		width: 50px;
+		height: 50px;
+
+		background-color: black;
+		display: inline-block;
+
+		box-shadow: 0px 0px 10px black;
+
+/*		animation-name: dilate;
+		animation-duration: 2s;*/
+	}
+
+	.half-circle {
+		position: absolute;
+		height: 110px;
+		width: 300px;
+		overflow: hidden;
+		z-index: 1;
+	}
+
+	.half-circle:before {
+		content: '';
+		position: absolute;
+		height: 300px;
+		width: 300px;
+		border-radius: 50%;
+		top: 0;
+		background: black;
+	}
+
+	@keyframes blink {
+
+	}
+
+/*	@keyframes dilate {
+		0% {border: 1px solid black;}
+		50% {border: 3px solid black;}
+		100% {border: 10px solid black;}
+	}*/
+
+	@keyframes look {
+		0% {right: 0px; top: 0px;}
+		25% {right: 30px; top: 0px;}
+		50% {right: -50px; top: -30px;}
+		75% {right: 80px; top: 50px;}
+		100% {right: 0px; top: 0px;}
+	}
+
+	
+
+	@keyframes rotate {
+		from {transform: rotate(0deg);}
+		to {transform: rotate(360deg);}
+	}
+
+	@keyframes example {
+		0% {background-color: blue; left: 0px; top: 0px;}
+		10% {background-color: red; left: 100px; top: 0px;}
+		20% {background-color: purple; left: 100px; top: 50px;}
+		30% {background-color: green; left: 200px; top: 50px;}
+		40% {background-color: orange; left: 200px; top: 100px;}
+		50% {background-color: steelblue; left: 300px; top: 100px;}
+		60% {background-color: tomato; left: 300px; top: 150px;}
+		70% {background-color: blue; left: 400px; top: 150px;}
+		80% {background-color: red; left: 400px; top: 400px;}
+		90% {background-color: black; left: 1600px; top: 450px;}
+		100% {background-color: blue; left: 0px; top: 0px;}
+	}
+
+	@-webkit-keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0,-4px,0);
+    transform: translate3d(0,-4px,0);
+  }
+}
