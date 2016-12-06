@@ -1,15 +1,17 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="public/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<script type="text/javascript" src="javascript/main.js"></script>
 </head>
 <body>
 	<div class="canvas">
 		<div class="block"> MOVE </div>
-		<div class="ball"> BOUNCE </div>
+		<div class="ball" id="ball" onClick="bounce()"> hover to bounce</div>
 		<div class="hoverEffects">
 			<div class="square" id="square1"> ease-in-out </div>
-			<div class="square" id="square2"> cubic bezier "bounce" </div>
-			<div class="square" id="square3"> cubic bezier "jump" </div>
+			<div class="square" id="square2"> cubic bezier "bounce"<br>cubic-bezier(0.56,-0.27, 0.39, 1.29) </div>
+			<div class="square" id="square3"> cubic bezier "jump"<br>cubic-bezier(0, 1.21, 0.57, 0.87) </div>
 		</div>
 		<img class="vinyl" src="public/spinny_vinyl.png"></img>
 		<div class="eye">
@@ -20,4 +22,5 @@
 		</div>
 	</div>
 </body>
+<script type="text/javascript" src="javascript/main.js"></script>
 </html>
