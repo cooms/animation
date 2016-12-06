@@ -225,34 +225,3 @@
 	    0% {-webkit-transform: rotate(-10deg);}
 	    100% {-webkit-transform: rotate(10deg);}
 	}
-
-	#piece {
-		width: 100px;
-		height:100px;
-		background-color: teal;
-
-		position: relative;
-		animation-duration: 1.5s;
-		animation-fill-mode: forwards;
-		animation-name: enterPiece
-  	}
-
-  	@keyframes enterPiece {
-
-      from {
-
-          transform: translateY(-150px) scale(1);
-
-          opacity: 0;
-
-      }
-
-      to {
-
-          transform: translateY(0px) scale(1);
-
-          opacity: 1;
-
-      }
-
-  }
