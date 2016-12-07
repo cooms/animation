@@ -6,21 +6,23 @@
 </head>
 <body>
 	<div class="canvas">
-		<div class="block"> MOVE </div>
-		<div class="ball" id="ball" onClick="bounce()"> click to bounce</div>
+		<h1> Check some hover effects achieved with cubic beziers: </h1>
 		<div class="hoverEffects">
 			<div class="square" id="square1"> ease-in-out </div>
 			<div class="square" id="square2"> cubic bezier "bounce"<br>cubic-bezier(0.56,-0.27, 0.39, 1.29) </div>
 			<div class="square" id="square3"> cubic bezier "jump"<br>cubic-bezier(0, 1.21, 0.57, 0.87) </div>
 		</div>
+		<h1> Some effects done with both keyframe animations and some js event listeners: </h1>
+		
+		<div class="ball" id="ball" onClick="bounce()"> Click </div>
 		<img class="vinyl" src="public/spinny_vinyl.png"></img>
+		<div class="block"> MOVE </div>
 		<div class="eye">
 			<div class="half-circle"></div>
 			<div class="iris">
 				<div class="pupil"></div>
 			</div>
 		</div>
-
 	</div>
 </body>
 <script type="text/javascript" src="javascript/main.js"></script>

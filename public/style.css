@@ -1,11 +1,21 @@
-.canvas {
+	body {
+		font-family: raleway;
+	}
+
+	h1 {
+		text-align: center;
+		padding: 100px 0px 50px 0px;
+
+		font-weight: normal;
+	}
+
+	.canvas {
 		width: 80%;
-		height: 800px;
+		height: auto;
 
 		margin: 0px auto;
 
 		box-shadow: 0px 0px 10px black;
-
 	}
 
 	.block {
@@ -33,16 +43,11 @@
 
 		text-align: center;
 		vertical-align: middle;
-		line-height: 50px; 
+		line-height: 110px; 
 		font-family: raleway;
 		color: white;
 
 		margin: 50px 500px;
-	}
-
-	.ball:hover {
-		animation-name: bounce;
-	    animation-duration: 1.7s;
 	}
 
 	.hoverEffects {
@@ -111,7 +116,8 @@
 
 		background-image: url("iris.png");
 		background-position: center;
- 		background-size: cover;
+ 		background-size: 155px 155px;
+ 		box-shadow: 0px 0px 10px black;
 
 		border-radius: 100px;
 		animation-name: look;
@@ -131,9 +137,6 @@
 		display: inline-block;
 
 		box-shadow: 0px 0px 10px black;
-
-/*		animation-name: dilate;
-		animation-duration: 2s;*/
 	}
 
 	.half-circle {
@@ -153,21 +156,16 @@
 		top: 0;
 		background: black;
 	}
+
 	@keyframes blink {
 
 	}
-
-/*	@keyframes dilate {
-		0% {border: 1px solid black;}
-		50% {border: 3px solid black;}
-		100% {border: 10px solid black;}
-	}*/
 
 	@keyframes look {
 		0% {right: 0px; top: 0px;}
 		25% {right: 30px; top: 0px;}
 		50% {right: -50px; top: -30px;}
-		75% {right: 80px; top: 50px;}
+		75% {right: 70px; top: 50px;}
 		100% {right: 0px; top: 0px;}
 	}
 
@@ -192,12 +190,14 @@
 		100% {background-color: blue; left: 0px; top: 0px;}
 	}
 
-	@keyframes bounce {
+	@keyframes bounce1 {
+		0% {background-color: green;}
 		from, 20%, 53%, 80%, to {
 			-webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
 			animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
 			-webkit-transform: translate3d(0,0,0);
 			transform: translate3d(0,0,0);
+			
 		}
 
 		40%, 43% {
@@ -217,5 +217,6 @@
 		90% {
 			-webkit-transform: translate3d(0,-4px,0);
 			transform: translate3d(0,-4px,0);
+			background-color: blue;
 		}
 	}
