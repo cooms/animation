@@ -31,6 +31,11 @@
 	    animation-duration: 4s;
 	}
 
+	.balls {
+		display: flex;
+		justify-content: space-around;
+	}
+
 	.ball {
 		width: 120px;
 		height: 120px;
@@ -46,8 +51,6 @@
 		line-height: 110px; 
 		font-family: raleway;
 		color: white;
-
-		margin: 50px 500px;
 	}
 
 	.hoverEffects {
@@ -74,7 +77,7 @@
 
 	#square2 {
 		background-color: steelblue;
-		transition: transform 300ms cubic-bezier(0.56,-0.27, 0.39, 1.29);
+		transition: transform 500ms cubic-bezier(0.99,-0.63, 0, 1.49);
 	}
 
 	#square3 {
@@ -218,5 +221,45 @@
 			-webkit-transform: translate3d(0,-4px,0);
 			transform: translate3d(0,-4px,0);
 			background-color: blue;
+		}
+	}
+
+	@keyframes bounce2 {
+		0% {
+			bottom: 0px;
+			transform: rotate(0deg);
+		}
+
+		50% {
+			bottom: 100px;
+			transform: rotate(360deg);
+		}
+
+		100% {
+			bottom: 0px;
+			transform: rotate(360deg);
+		}
+	}
+
+	@keyframes bounce3 {
+		0% {
+			left: 0px;
+			transform: rotate(0deg);
+		}
+		25% {
+			left: 200px;
+			transform: rotate(360deg);
+		}
+		50% {
+			left: 0px;
+			transform: rotate(0deg);
+		}
+		75% {
+			left: -200px;
+			transform: rotate(-360deg);
+		}
+		100% {
+			left: 0px;
+			transform: rotate(0deg);
 		}
 	}
