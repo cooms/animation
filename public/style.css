@@ -89,6 +89,20 @@
 		transform: rotate(45deg);
 	}
 
+	.gift {
+		width:1200px;
+		height: 1200px;
+
+		margin: 0 auto;
+	}
+
+	.giftCanvas {
+		width: 1000px;
+		height: 1000px;
+
+		margin: 0 auto;
+	}
+
 	.vinyl {
 		margin: 0px 403px;
 		width: 700px;
