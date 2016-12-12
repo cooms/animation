@@ -103,6 +103,20 @@
 		margin: 0 auto;
 	}
 
+	/*
+	
+	.inFront {
+		position: relative;
+		z-index: 1;
+	}
+
+	.behind {
+		position: relative;
+		z-index: 0;
+	}
+
+	*/
+
 	.vinyl {
 		margin: 0px 403px;
 		width: 700px;
