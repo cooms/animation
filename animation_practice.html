@@ -1,6 +1,6 @@
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link rel="stylesheet" type="text/css" href="public/animate.css">
 	<link rel="stylesheet" type="text/css" href="public/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<script type="text/javascript" src="javascript/main.js"></script>
@@ -23,15 +23,20 @@
 		<h1> Just a spinny vinyl </h1>
 		<img class="vinyl" src="public/vinyl.png"></img>
 		<h1> **In progress** </h1>
+		<div id="boxButton" onClick="runAnimation('giftLidCanvas', 'openBox 3s')"> Click to open the box!</div>
 		<div class="gift">
-			<svg class="giftCanvas">
-				<polygon points="0,170 300,0 600,170 300,340" fill="pink" />
-				<polygon points="0,170 300,340 300,430 0,260" fill="#E8A3BC" />
-				<polygon points="300,340 600,170 600,260 300,430" fill="#FFD3DB" />
-				<polygon points="20,240 300,400 300,680 20,510" fill="#E8A3BC" />
-				<polygon points="300,400 580,240 580,510 300,680" fill="#FFD3DB"/>
+			<svg class="giftLidCanvas" id="giftLidCanvas">
+				<polygon points="0,170 300,0 600,170 300,340" fill="pink" class="lid"/>
+				<polygon points="0,170 300,340 300,430 0,260" fill="#E8A3BC" class="lid"/>
+				<polygon points="300,340 600,170 600,260 300,430" fill="#FFD3DB" class="lid"/>
+			</svg>
+			<svg class="giftBoxCanvas">
+				<polygon points="20,160 300,0 580,160 300,320" fill="purple"/>
+				<polygon points="20,160 300,320 300,600 20,430" fill="#E8A3BC" />
+				<polygon points="300,320 580,160 580,430 300,600" fill="#FFD3DB"/>
 			</svg>
 		</div>
+
 		<div class="block"> MOVE </div>
 		<div class="eye">
 			<div class="half-circle"></div>

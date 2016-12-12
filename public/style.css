@@ -9,6 +9,20 @@
 		font-weight: normal;
 	}
 
+	p {
+		
+	}
+
+	#boxButton {
+		text-align: center;
+		padding: 10px;
+		border: 1px solid black;
+		border-radius: 5px;
+		
+		margin: 0 auto;
+		width: 200px;
+	}
+
 	.canvas {
 		width: 80%;
 		height: auto;
@@ -94,28 +108,26 @@
 		height: 1200px;
 
 		margin: 0 auto;
+		stroke: #E8A3BC;
 	}
 
-	.giftCanvas {
-		width: 1000px;
-		height: 1000px;
+	.giftLidCanvas {
+		width: 603px;
+		height: 430px;
 
 		margin: 0 auto;
-	}
-
-	/*
-	
-	.inFront {
 		position: relative;
 		z-index: 1;
 	}
 
-	.behind {
+	.giftBoxCanvas {
+		width: 603px;
+		height: 600px;
+
+		margin: -400 auto;
 		position: relative;
 		z-index: 0;
 	}
-
-	*/
 
 	.vinyl {
 		margin: 0px 403px;
@@ -187,6 +199,22 @@
 		top: 0;
 		background: black;
 	}
+
+	@keyframes openBox {
+		0% {left:0; top: 0};
+		33% {left:0; top: -200;}
+		66% {left: 500; top: -200;}
+		100% {left: 500;top: 400;}
+	}
+
+/*	@keyframes openBox {
+		from {
+			left:0; top: 0;
+		}
+		to {
+			left: 500;top: 400;
+		}
+	}*/
 
 	@keyframes blink {
 
